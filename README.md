@@ -12,3 +12,10 @@ The script should be executed this way: ./calc.sh 5 + 3
 
 Let's get started
 #Good luck!!!
+
+
+## DETAILS OF ASSIGNMENTS:
+1. Clone the repository
+2. Create a branch to work on the 3 scripts.
+3. Work on each task/script and push individually on same branch. So you would do multiple pushes with multiple commits on same branch
+4. Meet as a team, agree on a solution for the 3 tasks, create a new branch together called say "Final" and push.
