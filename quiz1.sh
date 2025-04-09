@@ -1,11 +1,11 @@
 #!/bin/bash
 #Assignment 3: Simple Quiz Game: Write a script that asks the user 5 questions. Keeps score and displays the score at the end of the quiz.
 
-echo " welcome students to your final quiz"
+echo "Welcome students to your final quiz"
 echo "The questions cover various topics, including geography, math, astronomy, chemistry, and literature."
 echo "Each question is worth 20 points."
 quiz() {
-  echo "Welcome to the quiz!"
+  echo "The quiz starts now!"
   echo "Please answer the following questions:"
   read -p "Enter your name: " name
   username=$name
