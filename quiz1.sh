@@ -8,7 +8,7 @@ quiz() {
   echo "Welcome to the quiz!"
   echo "Please answer the following questions:"
   read -p "Enter your name: " name
-  username= $name
+  username=$name
   score=0
   total=0
   quiz=0
