@@ -72,7 +72,7 @@ quiz() {
 
 
     # Display final score
-    Echo " ${username^} thank you for completing the test, you answered $quiz out of 5 questions correctly."
+    echo " ${username^} thank you for completing the test, you answered $quiz out of 5 questions correctly."
     echo "Your final score is: $score out of $total, which is $((score * 100 / total))%."
 
     if [ "$score" -eq 100 ]; then
