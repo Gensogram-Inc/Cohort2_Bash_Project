@@ -59,7 +59,7 @@ quiz() {
   fi
 
   # Question 5
-  read -p "5. Who wrote 'Romeo and Juliet'? " answer5 }
+  read -p "5. Who wrote 'Romeo and Juliet'? " answer5 
   ((total += 20))  # add 20 points to total
     if [[ "${answer5,,}" == "shakespeare" ]]; then
         ((score += 20))
