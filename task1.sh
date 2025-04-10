@@ -1,7 +1,7 @@
 #!/bin/bash
 #Task: 1. Simple Calculator: Build a calculator that supports +,-,/ and *. The script should be executed this way: ./calc.sh 5 + 3
 echo " let's do the calculation for you! "
-calculate () {
+calculator () {
         if [ $# -ne 3 ]; then
             echo "line arguument exceeds 3"
             echo "Usage: $0 <number1> <operator> <number2>"
