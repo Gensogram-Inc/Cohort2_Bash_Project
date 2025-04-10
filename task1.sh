@@ -3,7 +3,7 @@
 echo " let's do the calculation for you! "
 calculator () {
         if [ $# -ne 3 ]; then
-            echo "line arguument exceeds 3"
+            echo "Ensure line arguument is equal to 3"
             echo "Usage: $0 <number1> <operator> <number2>"
             exit 1
         #validate numbers
