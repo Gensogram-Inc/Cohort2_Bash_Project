@@ -1,6 +1,9 @@
 #!/bin/bash
 
+#note: script is not compatible with sh because [[...]] is not supported in sh. use ./filename.sh instead of sh filename.sh
+
 #Task: 1. Simple Calculator: Build a calculator that supports +,-,/ and *. The script should be executed this way: ./calc.sh 5 + 3
+
 echo " let's do the calculation for you! "
 calculator () {
         if [ $# -ne 3 ]; then
@@ -8,16 +11,20 @@ calculator () {
             echo "Usage: $0 <number1> <operator> <number2>"
             exit 1
 	fi
+
         #validate numbers
         if ! [[ "$1" =~ ^-?[0-9]+$ ]]; then
             echo "Error: First argument is not a number."
             exit 1
+	fi
+
 	#validate operator
         #check if the operator is valid
         if ! [[ "$2" =~ ^[\+\-\*\/]$ ]]; then
             echo "Error: Second argument is not a valid operator (+, -, *, /)."
             exit 1
 	fi
+
         #validate number
         if ! [[ "$3" =~ ^-?[0-9]+$ ]]; then
         echo "Error: Third argument is not a number."
