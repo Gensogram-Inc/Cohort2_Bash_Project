@@ -17,10 +17,10 @@ calculator () {
         #This is to avoid confusion with the shell interpreting + as a command.
         echo "Hint: If you're using "+", wrap it in quotes like: ./task1.sh 2 '+' 2"
         #check if the operator is valid
-        if ! [[ "$2" =~ ^[\+\-\*\/]$ ]]; then
-            echo "Error: Second argument is not a valid operator (+, -, *, /)."
-            exit 1
-        fi
+        #if ! [[ "$2" =~ ^[\+\-\*\/]$ ]]; then
+        #    echo "Error: Second argument is not a valid operator (+, -, *, /)."
+        #    exit 1
+        #fi
         # Handle division by zero
         if [[ "$op" == "/" && "$num2" -eq 0 ]]; then
             echo "Cannot divide by zero."
