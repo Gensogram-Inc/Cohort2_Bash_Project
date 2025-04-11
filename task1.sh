@@ -15,12 +15,21 @@ calculator () {
         fi
         #validate operator
         #This is to avoid confusion with the shell interpreting + as a command.
-        echo "Hint: If you're using "+", wrap it in quotes like: ./task1.sh 2 '+' 2"
+        #echo "Hint: If you're using "+", wrap it in quotes like: ./task1.sh 2 '+' 2"
         #check if the operator is valid
         #if ! [[ "$2" =~ ^[\+\-\*\/]$ ]]; then
         #    echo "Error: Second argument is not a valid operator (+, -, *, /)."
         #    exit 1
         #fi
+	case "$2" in
+            "+"|"-"|"*"|"/")
+            # Valid operator — do nothing or echo for debug
+            ;;
+            *)
+            echo " Error: '$2' is not a valid operator. Use one of +, -, *, /"
+            exit 1
+            ;;
+        esac
         # Handle division by zero
         if [[ "$op" == "/" && "$num2" -eq 0 ]]; then
             echo "Cannot divide by zero."
