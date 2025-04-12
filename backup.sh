@@ -3,7 +3,7 @@
 
 echo "This is a backup script for backing up directories with timestamped archive files."
 # Check if the user wants to back up the file
-read -p " will you like to back up the file? (yes/no): " backup_choice
+read -p " Will you like to back up the file? (yes/no): " backup_choice
 if [ "$backup_choice" != "yes" ]; then
   echo "Backup skipped."
   exit 0
