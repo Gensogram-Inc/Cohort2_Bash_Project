@@ -5,7 +5,7 @@
 echo " let's do the calculation for you! "
 calculator () {
         if [ "$#" -ne 3 ]; then
-            echo "line argument be 3"
+            echo "line argument be"
             echo "Usage: $0 <number1> <operator> <number2>"
             exit 1
         fi
