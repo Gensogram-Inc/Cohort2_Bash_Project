@@ -3,7 +3,7 @@
 
 echo "Welcome students to your final quiz"
 echo "The questions cover various topics, including geography, math, astronomy, chemistry, and literature."
-echo "Each question is worth 20 points."
+echo "Each question is worth 20 points!!!!!!!!!"
 quiz() {
   echo "The quiz starts now!"
   echo "Please answer the following questions:"
@@ -76,11 +76,11 @@ quiz() {
     echo "Your final score is: $score out of $total, which is $((score * 100 / total))%."
 
     if [ "$score" -eq 100 ]; then
-        echo "Ìæâ Perfect score! You are a genius!"
+        echo "ÔøΩÔøΩÔøΩ Perfect score! You are a genius!"
     elif [ "$score" -ge 65 ]; then
-        echo "Ì±ç Good job! You passed the quiz."
+        echo "ÔøΩÔøΩÔøΩ Good job! You passed the quiz."
     else
-        echo "Ì∏û Better luck next time!"
+        echo "ÔøΩÔøΩÔøΩ Better luck next time!"
     fi
 
 }
