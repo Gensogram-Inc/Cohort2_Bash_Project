@@ -11,7 +11,7 @@ calculator () {
         fi
         #validate numbers
         if ! [[ "$1" =~ ^-?[0-9]+$ ]]; then
-            echo "Error: First argument is not a number. Correct it and try again later"
+            echo "Error: First argument is not number. Correct it and try again later"
             exit 1
         fi
         #validate operator
