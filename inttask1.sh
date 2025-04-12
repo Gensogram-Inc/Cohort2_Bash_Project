@@ -2,6 +2,7 @@
 
 #Interactive Calculator Script (task1.sh)
 
+
 echo "Welcome to the Interactive Calculator!"
 echo "----------------------------------------"
 
@@ -14,10 +15,19 @@ fi
 
 # Ask for operator
 read -p "Enter operator (+, -, *, /): " op
-if ! [[ "$op" =~ ^[\+\-\*/]$ ]]; then
-  echo "❌ Error: Invalid operator. Use +, -, *, or /"
-  exit 1
-fi
+#if ! [[ "$op" =~ ^[\+\-\*/]$ ]]; then
+  #echo "❌ Error: Invalid operator. Use +, -, *, or /"
+ # exit 1
+#fi
+case "$op" in
+  "+"|"-"|"*"|"/")
+    ;;
+  *)
+    echo "❌ Error: '$op' is not a valid operator. Use one of +, -, *, /"
+    exit 1
+    ;;
+esac
+
 
 # Ask for second number
 read -p "Enter second number: " num2
