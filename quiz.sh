@@ -1,3 +1,5 @@
+#Adding comment 2
+#Adding comment to test Pull request
 #!/bin/bash
 #Assignment 3: Simple Quiz Game: Write a script that asks the user 5 questions. Keeps score and displays the score at the end of the quiz.
 
